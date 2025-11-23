@@ -156,13 +156,14 @@ public class PentahoReportingProcessServiceImpl implements ReportingProcessServi
         // final var reportPath = mifosBaseDir + File.separator + "pentahoReports" + File.separator + reportName +
         // ".prpt";
         String reportPath;
-        logger.debug("locale " + locale);
-        logger.debug("language " + language);
-        if (!"en".equals(locale.toString().toLowerCase()) && locale != null) {
-            reportPath = getReportPath() + reportName + "_" + locale.toString().toLowerCase() + ".prpt";
-        } else {
-            reportPath = getReportPath() + reportName + ".prpt";
-        }
+//        logger.debug("locale " + locale);
+//        logger.debug("language " + language);
+//        if (!"en".equals(locale.toString().toLowerCase()) && locale != null) {
+//            reportPath = getReportPath() + reportName + "_" + locale.toString().toLowerCase() + ".prpt";
+//        } else {
+//            reportPath = getReportPath() + reportName + ".prpt";
+//        }
+        reportPath = getReportPath() + reportName + ".prpt";
         var outPutInfo = "Report path: " + reportPath;
         logger.debug("Report path: {}", outPutInfo);
 
